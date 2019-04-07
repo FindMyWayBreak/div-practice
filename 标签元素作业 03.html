@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta   name="Generator" content="EditPlus®">
+<meta   name="Author" content="左默妄"/>
+<meta   name="Keywords" content="作业 素材 图片" />
+<meta   name="Description" content="不知道meta属性" />
+<title>Demo</title>
+<style type="text/css">
+*{
+margin:0;
+}
+.all{
+border:1px solid #80808061;
+height:450px;
+background-color:#80808061;
+}
+.frame{
+box-sizing:border-box;/*问题 */
+width:250px;
+height:320px;
+margin-top:50px;
+margin-left:auto;
+margin-right:auto;/* 要加单位 */
+
+background-color:white;
+padding-left:26px;
+padding-top:20px;
+border:1px solid white;/* 两个div外边距margin合并；是指margin设置后出现错误；而要给每个div上加上border，或padding才能按想来的来；只加一个是错误的 */
+}
+.Navigation-bar{
+box-sizing:border-box;
+width:200px;
+height:30px;
+margin-bottom:10px;
+padding-left:5px;
+padding-top:5px;
+background-color:#80808061;
+font-size:15px;
+}
+img{
+width:200px;
+}
+p{
+font-size:10px;}
+</style>
+</head>
+<body>
+<div class="all">
+<div class="frame">
+<div class="Navigation-bar"><a >鲜城</a> <a >美食</a> <a >休闲</a></div>
+<img src="./material/demo2/food.png" alt="这是啥化妆品"/>
+<p>美食 | <a href="">阿水撒奥奥所</a> <a href="">撒大声地所多</a></p>
+<p>美食 | <a href="">撒大声地多</a> <a href="">撒大声地所多</a></p>
+<p>休闲 | <a href="">好久好久</a> <a href="">算得上是</a></p>
+</div>
+</div>
+</body>
+</html>

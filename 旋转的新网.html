@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{
+				background-color:black;
+			}
+			.wrap{
+				position:absolute;
+				left:0;
+				right:0;
+				top:50px;
+				width:100px;
+				height:151px;
+				border:1px solid red;
+				margin:auto;
+				border-radius:50px 50px 0px 95px;
+				border-right-color:transparent;
+				transform-origin:right;
+				
+			}
+			.wid{
+				position:relative;
+				left:0;
+				right:0;
+				top:50px;
+				width:200px;
+				height:200px;
+				/* border:1px solid red; */
+				margin:auto;
+				perspective:500px;
+				transform-origin:150px bottom;
+				transform-style:preserve-3d;
+			}
+			.wid:hover{
+				animation-name:run;
+				animation-duration:6s;
+				animation-delay:2s;
+				animation-timing-function:linear;
+				animation-iteration-count:3;
+				/* animation-direction:alternate; */
+				/* animation-play-state:running; */
+				animation-fill-mode:forwards;/* animation的几个属性会相互影响 */
+			}
+			.wrap1{
+				transform:rotateY(30deg) rotateZ(20deg);
+			}
+			.wrap2{
+				transform:rotateY(60deg) rotateZ(20deg);
+			}
+			.wrap3{
+				transform:rotateY(90deg) rotateZ(20deg);
+			}
+			.wrap4{
+				transform:rotateY(120deg) rotateZ(20deg);
+			}
+			.wrap5{
+				transform:rotateY(150deg) rotateZ(20deg);
+			}
+			.wrap6{
+				transform:rotateY(180deg) rotateZ(20deg);
+			}
+			.wrap7{
+				transform:rotateY(210deg) rotateZ(20deg);
+			}
+			.wrap8{
+				transform:rotateY(240deg) rotateZ(20deg);
+			}
+			.wrap9{
+				transform:rotateY(270deg) rotateZ(20deg);
+			}
+			.wrap10{
+				transform:rotateY(300deg) rotateZ(20deg);
+			}
+			.wrap10{
+				transform:rotateY(330deg) rotateZ(20deg);
+			}
+			@keyframes run{
+				20%{
+					transform: rotateX(60deg) rotateY(60deg) rotateZ(60deg);
+				}
+				40%{
+					transform: rotateX(120deg) rotateY(120deg) rotateZ(120deg);
+				}
+				60%{
+					transform: rotateX(180deg) rotateY(180deg) rotateZ(20deg);
+				}
+				80%{
+					transform: rotateX(240deg) rotateY(240deg) rotateZ(20deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wid">
+				<div class="wrap"></div>
+				<div class="wrap wrap1"></div>
+				<div class="wrap wrap2"></div>
+				<div class="wrap wrap3"></div>
+				<div class="wrap wrap4"></div>
+				<div class="wrap wrap5"></div>
+				<div class="wrap wrap6"></div>
+				<div class="wrap wrap7"></div>
+				<div class="wrap wrap7"></div>
+				<div class="wrap wrap8"></div>
+				<div class="wrap wrap9"></div>
+				<div class="wrap wrap10"></div>
+		</div>
+	</body>
+</html>

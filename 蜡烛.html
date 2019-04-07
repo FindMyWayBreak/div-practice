@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.wrap{
+				position:absolute;
+				z-index:5;
+				left:0;
+				right:0;
+				top:50px;
+				margin:auto;
+				width:70px;
+				height:100px;
+				border:1px solid red;
+				border-radius:50%;
+				background:no-repeat radial-gradient(red 20%,yellow 50% ,red 70%);
+				/* transition:3s; */
+				animation:run 3s infinite ;
+			}
+			.wrap1{
+				position:absolute;
+				z-index:1;
+				left:0;
+				right:0;
+				top:100px;
+				margin:auto;
+				width:100px;
+				height:70px;
+				border:1px solid red;
+				border-radius:50%;
+				background:no-repeat radial-gradient(red 20%,yellow 50% ,red 70%);
+			}
+			.wrap2{
+				top:350px;
+			}
+			.item{
+				position:absolute;
+				left:0;
+				right:0;
+				top:140px;
+				margin:auto;
+				width:100px;
+				height:250px;
+				background-color:red;
+			}
+			@keyframes run{
+				50%{
+					top:0px;
+					height:150px;
+				}
+			}
+			.wrap:hover{
+				animation-play-state:paused
+			}
+		</style>
+	</head>
+	<body>
+	<div class="wrap"></div>
+	<div class="wrap1"></div>
+	<div class="wrap1 wrap2"></div>
+	<div class="item"></div>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			
+			.wrap{
+				width:1000px;
+				height:400px;
+				border:1px solid transparent;
+				margin:150px auto;
+				
+			}
+			.bgc{
+				position:absolute;
+				left:0;
+				top:0;
+				right:0;
+				bottom:0;
+				margin:auto;/* 盒子居中整个.bgc铺满屏幕 */
+				background-color:red;
+				background:url("imagesd/1.jpg")
+			}
+			.wrap input{
+				position:absolute;
+				float:left;
+				z-index:555;/* input放到box上 */
+				width:100px;
+				height:400px;
+				border:1px solid red;
+				background-color:blue;
+				opacity:0;
+			}
+			/* .wrap input:nth-of-type(2){?
+				top:0px;
+				left:100px;
+			}
+			input:nth-of-type(3){
+				top:0px;
+				left:200px;	
+			}注释掉这段会让input随着div移动而移动加上top和left会固定位置
+			input:nth-of-type(4){
+				top:0px;
+				left:300px;	
+			} */
+			.wrap div{
+			float:left;
+				width:100px;
+				height:400px;
+				background-color:skyblue;
+				transition:1s;
+			}
+			.wrap input:checked + .box1{/* 比邻元素选择 */
+				width:700px;
+			}
+			/* .wrap input:nth-of-type(1):checked .bgc{比邻元素选择
+				background:url("imagesd/1.jpg")	
+			} */
+			.wrap input:checked + .box2{/* 比邻元素选择 */
+				width:700px;	
+			}
+			.wrap input:checked + .box3{/* 比邻元素选择 */
+				width:700px;	
+			}
+			.wrap input:checked + .box4{/* 比邻元素选择 */
+				width:700px;	
+			}
+			.box1{
+				background:url("imagesd/1.jpg") no-repeat 
+				center/700px 400px
+			}
+			.box2{
+				background:url("imagesd/2.jpg") no-repeat 
+				center/700px 400px
+			}
+			.box3{
+				background:url("imagesd/3.jpg") no-repeat 
+				center/700px 400px
+			}
+			.box4{
+				background:url("imagesd/4.jpg") no-repeat 
+				center/700px 400px/* 解决相互推搡问题？ */
+			}
+		    .bgc #in:checked {
+				background:url("imagesd/4.jpg")
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bgc" >
+		<div class="wrap" >
+		<input type="radio" name="slect" id="in" />
+		<div class="box1"></div>
+		<input type="radio" name="slect" />
+		<div class="box2"></div>
+		<input type="radio" name="slect" />
+		<div class="box3" ></div>
+		<input type="radio" name="slect" checked="checked" />
+		<div class="box4" > </div>
+		</div>
+			</div>
+	</body>
+</html>

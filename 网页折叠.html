@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			#head{
+				perspective:500px;
+				transform-style:preserve-3d;
+			}
+			.wrap1{
+				position:relative;
+				left:0;
+				right:0;
+				top:100px;
+				width:100px;
+				height:25px;
+				border:1px solid red;
+				margin:auto;
+			}
+			
+			.wrap2{
+				position:absolute;
+				left:0;
+				right:0;
+				top:100px;
+				width:100px;
+				height:25px;
+				border:1px solid red;
+				margin:auto;
+				transform-origin:bottom;
+			}
+			.move
+			{
+				position:relative;
+			}
+			#head:hover .move{
+				transform:rotateX(90deg);
+				animation:run 4s;
+				transition:4s;
+			}
+			@keyframes run{
+				50%{
+					top:100px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="head">
+			<div class=" wrap1">1</div>
+			<div class="move">
+			<div class=" wrap2">2</div>
+			<div class=" wrap2" style="top:125px;">3</div>
+			<div class=" wrap2" style="top:150px;">4</div>
+			<div class=" wrap2" style="top:175px;">5</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

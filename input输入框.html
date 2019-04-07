@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0；
+				padding:0;
+			}
+			.wrap{
+				position:relative;
+				box-sizing:border-box;
+				width:500px;
+				height:400px;
+				margin:100px auto;
+				padding-top:35px;
+				border:1px solid rgb(217,217,217);
+				border-radius:5px 5px 5px 5px;
+			}
+			input{
+				width:240px;
+				height:30px;
+				display:block;
+				margin:15px auto;
+			}
+			input:focus input{
+				outline:skyblue;
+			}
+			span{
+				position:absolute;
+				top:0px;
+				left:0px;
+			}
+			.wrap span:nth-of-type(1){
+					position:absolute;
+					top:50px;
+					left:59px;
+			}
+			.wrap span:nth-of-type(2){
+					position:absolute;
+					top:103px;
+					left:79px;
+			}
+			.wrap span:nth-of-type(3){
+					position:absolute;
+					top:154px;
+					left:40px;
+			}
+			.wrap span:nth-of-type(4){
+					position:absolute;
+					top:209px;
+					left:65px;
+			}
+			.wrap span:nth-of-type(5){
+					position:absolute;
+					top:262px;
+					left:79px;
+			}
+			.wrap input:nth-of-type(6){
+				display:inline-block;
+				width:70px;
+				height:30px;
+				margin-left:170px;
+				background-color:rgb(60,108,177);
+				color:white;
+				border-radius:7px 7px 7px 7px;
+			}
+			.wrap input:nth-of-type(7){
+				display:inline-block;
+				width:125px;
+				height:30px;
+				background-color:rgb(60,108,177);
+				color:white;
+				border-radius:7px 7px 7px 7px;
+			}
+			.out{
+				position:absolute;
+				left:400px;
+				top:30px;
+				width:283px;
+				height:53px;
+				background-color:skyblue;
+			}
+			.out::before{
+				content:"";
+				display:block;
+				float:left;
+				width:0;
+				height:0;
+				border:18px solid transparent;
+				border-right:18px solid skyblue;
+				margin:16px 0px 0px -26px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="wrap">
+	<span >用户名</span><input type="text" />
+	<span >密码</span><input type="password"  />
+	<span >确认密码</span><input type="password" />
+	<span >email</span><input type="email" />
+	<span >昵称</span><input type="text" />
+	<input type="button" value="注册"/>
+	<input type="submit" value="我有账号,我要登录"/>
+	<div class="out">用户名必须为4-16位英文或字母</div>
+	</div>
+	</body>
+</html>

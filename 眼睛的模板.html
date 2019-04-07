@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+  *{
+	margin:0;
+	padding:0;
+  }
+  body{background-color:#000;}
+  .wrap{
+		
+		width:1000px;
+		height:100px;
+		margin:100px auto;
+		/* background-color:pink; */
+	}
+  .wrap >div{
+		overflow:hidden;
+		width:200px;
+		height:100px;
+		display:inline-block;
+		background-color:#fff;
+		box-shadow:0 0 20px #fff,0 0 30px #ddd;
+		
+  }
+  .right{
+		margin-left:590px; 
+		border-radius:90% 1% 90% 1%/90% 1% 90% 1%;
+  }
+  .left{
+		 
+		border-radius:1% 90% 1% 90%/1% 90% 1% 90%;
+  }
+  .eye{ 
+		width:100px;
+		height:100px;
+		margin-top:10px;
+		background-color:pink;
+		border-radius:50%;
+		background:
+		radial-gradient(#fff 15%,transparent 15%),
+		radial-gradient(#000 50%,transparent 50%),
+		linear-gradient(to bottom,transparent 50%,#000 50%) no-repeat center/25px 100px,
+		radial-gradient(transparent 64%,#000 64%),
+		linear-gradient(to top,red 50%,transparent 50%),
+		linear-gradient(40deg,transparent 40%,#000 40%,#000 60%,transparent 60%),
+		linear-gradient(-40deg,transparent 40%,#000 40%,#000 60%,transparent 60%),
+		linear-gradient(red,red);
+
+  }
+  .wrap .left .eye{
+		margin-left:90px;
+	}
+	.wrap .right .eye{
+		margin-left:10px;
+	}
+  </style>
+ </head>
+ <body>
+  <div class="wrap">
+		<div class="left">
+			<div class="eye"></div>
+		</div>
+		<div class="right">
+			<div class="eye"></div>
+		</div>
+	</div>
+ </body>
+</html>

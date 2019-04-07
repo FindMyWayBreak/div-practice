@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.head{
+				height:30px;
+				background-color:rgb(243,243,243);
+				margin-left:100px;
+				margin-right:100px;
+				margin-top:50px;
+				line-height:30px;
+				font-size:14px;
+				border-radius:5px;
+				min-width:1200px;/* 解决挤压换行问题 */
+			}
+			.head a{
+				text-decoration:none;
+				color:rgb(167,167,167);
+			}
+			.head .left{
+				float:left;
+				margin-left:100px;
+			}
+			.left span{
+				color:rgb(167,167,167);
+			}
+			.left a:hover{
+				text-decoration:underline;
+				color:red;
+			}
+			.right a:hover{
+				text-decoration:underline;
+				color:red;
+			}
+			.head .left i{
+				margin-top:5px;
+				margin-right:2px;
+				float:left;
+				width:15px;
+				height:15px;
+				background:url("./images-ali/1.png") no-repeat center/15px 15px;
+			}
+			.head .left div{
+				float:left;
+				margin-right:10px;
+			}
+			.head .right{
+				float:right;
+				margin-right:100px;
+			}
+			.head .right i{
+				width:15px;
+				height:15px;
+				float:right;
+				margin-top:9px;
+				background:url("./images-ali/3.png") no-repeat center/20px 20px;
+				transition:1s;
+				transform:rotate(-90deg);
+			}
+			.right div:nth-of-type(4) i{
+				width:15px;
+				height:15px;/* 样式污染 */
+				float:left;
+				margin-top:5px;
+				margin-right:2px;
+				transform:rotate(0deg);
+				background:url("./images-ali/2.png") no-repeat center/25px 15px;
+			
+			}
+			.head .right div{
+				float:right;
+				margin-right:20px;
+				text-align:center;
+				/* transition:1s; */
+			}
+			.right div:hover{/* hover用法 */
+				background-color:white;
+			}
+			.right div:nth-of-type(1):hover i{
+				transform:rotate(0deg);
+			}
+			.right div:nth-of-type(3):hover i{
+				transform:rotate(0deg);
+			}
+			.right div:nth-of-type(5):hover i{
+				transform:rotate(0deg);
+			}
+			.right div:nth-of-type(5):hover .sha{
+				display:block;
+			}
+			.right .disc{
+				position:relative;
+			}
+			.head .right .sha{
+				display:none;
+				position:absolute;
+				top:30px;
+				width:100px;
+				box-shadow: 0px 0px 1px #888888;/* box-shadow的用法 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<div class="left">
+				<div><i></i><a href="javascript:;">天猫首页</a></div>
+				<div><span>喵，欢迎来到天猫</span></div>
+				<div><a href="javascript:;">请登录</a></div>
+				<div><a href="javascript:;">免费注册</a></div>
+			</div>
+			<div class="right">
+				<div class="one"><a href="javascript:;">我的淘宝</a><i class="two"></i></div>
+				<div><a href="javascript:;">购物车0件</a></div>
+				<div><a href="javascript:;">收藏夹</a><i></i></div>
+				<div><i></i><a href="javascript:;">淘宝网</a></div>
+				<div class="disc"><a href="javascript:;">商家支持</a><i></i>
+				<div class="sha"><!-- 悬浮隐藏框应该放在relative下面子绝父相 -->
+					<a href="">已买到的宝贝</a>
+					<a href="">已卖出的宝贝</a>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.tab{
+				position:relative;
+				right:0;
+				left:0;
+				top:200px;
+				margin:auto;
+				width:200px;
+				height:200px;
+				background-color:black;
+				transform:rotate(45deg);
+			}
+			.wrap{
+				position:absolute;
+				left:50%;
+				top:50%;
+				margin-left:-50px;
+				margin-top:-50px;
+				width:100px;
+				height:100px;
+				background-color:red;
+				opacity:.5;
+				border:1px solid transparent; 
+				border-radius:0 100px 0 100px;
+				transition:3s 2s;
+				transform-origin:right bottom;
+			}
+			.head:hover .wrap1{
+				animation:run1 3s 2  alternate;
+			}
+			.head:hover .wrap2{
+				animation:run2 3s 2  alternate;
+			}
+			.head:hover .wrap3{
+				animation:run3 3s 2  alternate;
+			}
+			.head:hover .wrap4{
+				animation:run4 3s 2  alternate;
+			}
+			.head:hover .wrap5{
+				animation:run5 3s 2  alternate;
+			}
+			.head:hover .wrap6{
+				animation:run6 3s 2  alternate;
+			}
+			
+			@keyframes run1{
+				100%{
+					transform:rotate(60deg);
+				}
+			}
+			@keyframes run2{
+				100%{
+					transform:rotate(120deg);
+				}
+			}
+			@keyframes run3{
+				
+				100%{
+					transform:rotate(180deg);
+				}
+			}@keyframes run4{
+				100%{
+					transform:rotate(240deg);
+				}
+			}@keyframes run5{
+				100%{
+					transform:rotate(300deg);
+				}
+			}
+			@keyframes run6{
+				100%{
+					transform:rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+	<div class="head">
+	<div class="tab">
+	<div class="wrap"></div>
+	<div class="wrap wrap1"></div>
+	<div class="wrap wrap2"></div>
+	<div class="wrap wrap3"></div>
+	<div class="wrap wrap4"></div>
+	<div class="wrap wrap5"></div>
+	<div class="wrap wrap6"></div>
+	</div>
+	</div>
+	</body>
+</html>

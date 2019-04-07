@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.all{
+				position:relative;
+				width:1226px;
+				height:460px;
+				background-color:pink;
+				margin:50px auto;
+			}
+			.all ul li{
+				position:absolute;
+				list-style-type:none;
+			}
+			.all .tab div{
+				position:absolute;
+				top:50%;
+				margin-top:-34.5px;
+				width:41px;
+				height:69px;
+				background:url("./position/btn.png") no-repeat;
+			}
+			.tab div.tab-left{
+				left:234px;
+				background-position:-83px 0px;
+			}
+			.tab div.tab-left:hover{
+				background-position:0 0;
+			}
+			.tab div.tab-right{
+				right:0;
+				background-position:right 0px;
+			}
+			.tab div.tab-right:hover{
+				background-position:-41px 0px;
+			}
+			.all .radius{
+				position:absolute;
+				right:10px;
+				bottom:25px;
+				width:300px;
+				height:10px;
+			}
+			.radius ul li{/* ul的大小和盒子大小不一样 */
+				position:static;
+				list-style-type:none;
+				display:inline-block;
+				width:6px;
+				height:6px;
+				margin-left:5px;
+				background-color:#FFF;
+				border-radius:50%;
+				}
+			.radius ul li.active{
+				border: 2px solid #eee;
+				background-color: #ddd;
+			}/* 选择不上 */
+			.all .nav{	
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 234px;
+			height: 440px;
+			padding-top: 20px;
+			background-color: rgba(0,0,0,.6);
+			}
+			.all .nav ul li{
+				list-style-type:none;
+				position:static;
+			}
+			.all .nav li.list:hover {/* .all .nav ul li:hover */
+				background-color:orange;
+			}
+			.all .nav ul li a{
+			text-decoration:none;
+			color:#fff;
+			font-size:14px;
+			line-height:42px;
+			margin-left:25px;
+			}
+			.all .nav ul li span{
+				float:right;
+				margin-right:20px;
+				font-size:18px;
+				font-weight:bold;
+			}
+			.all .nav ul li:hover .first{
+				display:block;
+			}
+			.all .nav .first{
+				display:none;
+				position: absolute;
+				left: 234px;
+				top: 0px;
+				width: 992px;
+				height: 460px;
+				background-color: #fff;
+				box-shadow: 1px 1px 5px grey;
+			}
+			.all .nav .first ul{
+				float:left;
+				width: 248px;
+				height: 460px;
+				/* background-color:red; */
+			}
+			.all .nav .first ul li{
+				line-height: 75px;
+				padding-left: 15px;
+			}
+			.nav .first ul li a{
+				color:black;	/* 颜色改变 */
+			}
+			.first ul li a img{
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+			vertical-align: middle;
+			}
+			.all .nav .second{
+				width:496px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="all">
+		<ul>
+			<li><img src="./position/banner/1.jpg" alt="" /></li>
+			<li><img src="./position/banner/1.jpg" alt="" /></li>
+			<li><img src="./position/banner/1.jpg" alt="" /></li>
+			<li><img src="./position/banner/1.jpg" alt="" /></li>
+			<li><img src="./position/banner/1.jpg" alt="" /></li>
+		</ul>
+		<div class="tab">
+			<div class="tab-left"></div>
+			<div class="tab-right"></div>
+		</div>
+		<div class="radius">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="list"><a href="">手机 电话卡<span>></span></a>
+					<div class="first">
+						<ul class="col">
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							
+						</ul>
+					</div>
+				</li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a>
+				<div class="first second">
+						<ul class="col">
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							<li>
+								<a href=""><img src="./position/item/1/1.png" alt="" /> 小米MIX3</a>
+							</li>
+							
+						</ul>
+						</div>
+				</li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>
+				<li class="list"><a href="">手机 电话卡<span>></span></a></li>				
+			</ul>	
+		</div>
+		</div>
+	</body>
+</html>
