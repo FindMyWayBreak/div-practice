@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			body{
+				background-color:black;
+			}
+			.wrap{
+				width:800px;
+				height:100px;
+				margin:50px auto;
+			}
+			.wrap .left{
+				overflow:hidden;
+				float:left;
+				width:200px;
+				height:100px;
+				background-color:#fff;
+				border-radius:0px 100px 0px 100px;
+			}
+			.wrap .right{
+				overflow:hidden;
+				float:right;
+				width:200px;
+				height:100px;
+				background-color:#fff;
+				border-radius:100px 0px 100px 0px;
+			}
+			.wrap .eye{
+				width:80px;
+				height:80px;
+				background-color:pink;
+				border-radius:50%;
+				background:radial-gradient(#fff 10%,transparent 10%),
+				radial-gradient(#000 40%,transparent 40%),
+				linear-gradient(to bottom,transparent 50%,#000 50%
+				) no-repeat center/30%,radial-gradient(transparent 64%,#000 64%),
+				linear-gradient(to top,red 50%,transparent 50%)
+				,linear-gradient(-40deg,transparent 40%,#000 40%,#000 40%,#000 60%,transparent 60%),
+				linear-gradient(40deg,transparent 40%,#000 40%,#000 40%,#000 60%,transparent 60%),linear-gradient(red,red);
+			}
+			.wrap .left .eye{
+				margin-left:108px;
+				margin-top:22px;
+			}
+			.wrap .right .eye{
+				margin-top:22px;
+				margin-left:12px;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="wrap">
+		<div class="left">
+			<div class="eye"></div>
+		</div>
+		<div class="right">
+			<div class="eye"></div>
+		</div>
+	</div>
+	</body>
+</html>

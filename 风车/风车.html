@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="左默妄">
+		<meta name="Keywords" content="模板">
+		<meta name="Description" content="练习模板">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{
+				background-color:black;
+			}
+			.head{
+				position:relative;
+				width:20px;
+				left:0;
+				right:0;
+				top:300px;
+				margin:auto;
+				transform:rotate(180deg);
+			}
+			.limb{
+				position:absolute;
+				height:0;
+				z-index:1;
+				width:20px;
+				background-color:#00ff10;
+				animation-name:increase;
+				animation-duration:2s;
+				animation-fill-mode:forwards;
+				/* animation-direction:alternate; */
+			}
+			.body{
+				position:relative;
+				z-index:3;
+				transform-origin:10px 115px;;
+				animation:bodyrotate 2s 6s infinite linear;
+			}
+			.love{
+				position:absolute;
+				z-index:5;
+				top:100px;
+				left:-5px;
+				width:30px;
+				height:30px;
+				transform:scale(0);
+				background-color:#00ffcc;
+				border-radius:100%;
+				animation:delay 2s 2s forwards;
+			}
+			.petal{
+				position:absolute;
+				top:65px;
+				left:-40px;
+				width:50px;
+				height:50px;
+				background-color:skyblue;
+				transform:rotate(225deg);
+				transform:scale(0);
+				border-radius:0 50px;
+				transform-origin:right bottom;
+				animation:rotate1 2s 4s forwards;
+				opacity:.5;
+			}
+			.body .petal2{
+				animation:rotate2 2s 4s forwards;
+			}
+			.body .petal3{
+				animation:rotate3 2s 4s forwards;
+			}
+			.body .petal4{
+				animation:rotate4 2s 4s forwards;
+			}
+			@keyframes increase{
+				100%{
+					height:115px;
+				}
+			}
+			@keyframes delay{
+				from{
+					transform:scale(0);
+				}
+				to{
+					transform:scale(1)
+				}
+			}
+			@keyframes rotate1{
+				from{
+					transform:scale(0);
+					transform:rotate(225deg);
+				}
+				to{
+					transform:scale(1);
+					transform:rotate(225deg);
+				}
+			}
+			@keyframes rotate2{
+				from{
+					transform:scale(0);
+					transform:rotate(225deg);
+				}
+				to{
+					transform:scale(1);
+					transform:rotate(315deg);
+				}
+			}
+			@keyframes rotate3{
+				from{
+					transform:scale(0);
+					transform:rotate(225deg);
+				}
+				to{
+					transform:scale(1);
+					transform:rotate(405deg);
+				}
+			}
+			@keyframes rotate4{
+				from{
+					transform:scale(0);
+					transform:rotate(225deg);
+				}
+				to{
+					transform:scale(1);
+					transform:rotate(495deg);
+				}
+			}
+			@keyframes bodyrotate{
+				to{
+					transform:rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+			<div class="head">
+			<div class="limb"></div>
+			<div class="xuanzhuan">
+				<div class="love"></div>
+				<div class="body">
+					<div class="petal petal1"></div>
+					<div class="petal petal2"></div>
+					<div class="petal petal3"></div>
+					<div class="petal petal4"></div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
